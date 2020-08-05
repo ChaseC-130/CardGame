@@ -2,11 +2,18 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Player {
+
+	Player() {
+		
+	}
 	
 	String name;
 	boolean dead;
 	int maxHealth, currentHealth, cards;
-	Queue<Card> onBoard = new LinkedList<Card>();
+	public Queue<Card> onBoard = new LinkedList<Card>();
+	public Queue<Card> onBench = new LinkedList<Card>();
+	public Queue<Card> inHand = new LinkedList<Card>();
+	
 	
 	Player(String name, int maxHealth, int cards) {
 		name = this.name;
@@ -20,7 +27,6 @@ public class Player {
 		currentHealth -= damage;
 		if (currentHealth <= 0) dead = true;
 	}
-	
-	
+		
 
 }

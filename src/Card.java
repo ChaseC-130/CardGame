@@ -1,5 +1,3 @@
-
-
 public class Card {
 	
 	String name;
@@ -23,6 +21,6 @@ public class Card {
 		if (target.currentHealth < 0) target.dead = true;
 	}
 	
-	
+
 
 }
